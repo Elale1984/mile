@@ -1,4 +1,11 @@
-/* Tags */
+/*============================================================================================================================================= 
+ Tags
+=============================================================================================================================================== */
+
+body {
+    background-color: gainsboro;
+}
+
 h1 {
     font-size: 56px;
     font-family: 'Times New Roman', Times, serif;
@@ -46,7 +53,7 @@ img {
     width: 40%;
 }
 
-section{
+section {
     align-items: center;
     align-items: center;
 }
@@ -62,8 +69,9 @@ a:hover {
     background-color: gold;
 }
 
-/* Table CSS  */
-
+/*===========================================================================================================================================
+ Table CSS  
+============================================================================================================================================== */
 th,
 table,
 td,
@@ -79,7 +87,6 @@ table {
     font-size: 2pc;
     border-collapse: collapse;
     width: 50%
-    
 }
 
 /* This will align all of the table data to center */
@@ -92,7 +99,11 @@ tr:nth-child(even) {
     background-color: #9aee79;
 }
 
-/* Repeated use for elements by id */
+
+/*============================================================================================================================================= 
+ Repeated use for elements by id 
+ ============================================================================================================================================== */
+
 #homeBanner {
     overflow: hidden;
     background-image: url("images/codebanner.png");
@@ -108,12 +119,41 @@ tr:nth-child(even) {
 
 }
 
-/* Classes */
+/*==========================================================================================================================================
+  Classes 
+==========================================================================================================================================*/
+
 .center {
     text-align: center;
-    
+
 }
-table.center{
+
+.backdrop {
+    background-image: url(images/kotlin-java-banner.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p.standout {
+    background-color: black;
+    text-align: center;
+    border: 6px;
+    border-style: solid;
+    border-color: white;
+    padding: 1em;
+    color: darkorange;
+    text-shadow: 1px 1px black;
+}
+
+img.standoutborder {
+
+    border: 3px;
+    border-style: solid;
+    border-color: white;
+}
+
+table.center {
     margin-left: auto;
     margin-right: auto;
 }
@@ -132,6 +172,10 @@ table.center{
     display: inline-block;
     padding: 2px;
 }
+
+/*=======================================================================================================================================
+  KeyFrames for browsers 
+======================================================================================================================================= */
 
 @keyframes fadeIn {
     0% {
