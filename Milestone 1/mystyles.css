@@ -1,0 +1,184 @@
+/* Tags */
+h1 {
+    font-size: 56px;
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    text-decoration: underline;
+    margin-bottom: 0%;
+
+}
+
+h2 {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkorange;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+    text-align: center;
+
+}
+
+p {
+    align-items: center;
+    border: 3px;
+    border-style: solid;
+    border-color: #FF0000;
+    padding: 1em;
+
+}
+
+hr {
+    height: 4px;
+    border-width: 0px;
+    background-color: red;
+}
+
+ul {
+    color: yellow;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+section{
+    align-items: center;
+    align-items: center;
+}
+
+a {
+    font-size: 20px;
+    background-color: transparent;
+    transition: background-color 1s;
+
+}
+
+a:hover {
+    background-color: gold;
+}
+
+/* Table CSS  */
+
+th,
+table,
+td,
+
+th {
+    border: 1px solid black;
+}
+
+/* This will set the borders to collapse and will bake the width of the 
+whole table 50%. 
+ */
+table {
+    font-size: 2pc;
+    border-collapse: collapse;
+    width: 50%
+    
+}
+
+/* This will align all of the table data to center */
+td {
+    text-align: center;
+}
+
+/* This will alternate and color the even cells  */
+tr:nth-child(even) {
+    background-color: #9aee79;
+}
+
+/* Repeated use for elements by id */
+#homeBanner {
+    overflow: hidden;
+    background-image: url("images/codebanner.png");
+    object-fit: cover;
+    height: 75px;
+    text-align: center;
+
+}
+
+#bannertext {
+    text-shadow: 1px 1px lawngreen;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+}
+
+/* Classes */
+.center {
+    text-align: center;
+    
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fade-in {
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+
+    color: #FF0000;
+    border: solid;
+    border-style: solid;
+    border-color: red;
+    display: inline-block;
+    padding: 2px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

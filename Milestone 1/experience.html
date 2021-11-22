@@ -6,110 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
 
-    <!-- Style for the H1 -->
-    <style>
-        h1 {
-            color: hsl(246, 98%, 48%);
-            font-family: arial;
-            font-size: 60px;
-            font-weight: bold;
-            text-decoration: underline;
-            
-        }
-    </style>
-
-    <!-- CSS style for table -->
-    <style>
-        th,
-        table,
-        td,
-
-        th {
-            border: 1px solid black;
-        }
-
-        /* This will set the borders to collapse and will bake the width of the 
-        whole table 50%. 
-         */
-        table {
-            font-size: 2pc;
-            border-collapse: collapse;
-            width: 50%
-        }
-
-        /* This will align all of the table data to center */
-        td {
-            text-align: center;
-        }
-
-        /* This will alternate and color the even cells  */
-        tr:nth-child(even) {
-            background-color: #9aee79;
-        }
-    </style>
 </head>
 
 <body>
-    <!-- using the div tag to align this whole portion to center -->
-    <div align="center">
 
-        <!-- The page header in standard convention of h1 with color blue encased in block font tag-->
-        <font color="blue">
-            <h1>Experience</h1>
-        </font>
+    <!-- Animated Banner with fade in text -->
+    <div id="homeBanner">
+        <div id="bannertext">
+            <h2 class="fade-in">Show That You Know</h2>
+        </div>
+    </div>
 
-        <!-- Give a little spacing -->
-        <br>
-        <br>
 
-        <!-- Creating the table that has 3 columns of data with headers -->
-        <table>
-            <!-- Table Header -->
-            <tr>
-                <th>Skills</th>
-                <th>Years</th>
-                <th>Where</th>
-            </tr>
-            <!-- first row -->
-            <tr>
-                <td>Java</td>
-                <td>3</td>
-                <td>School</td>
-            </tr>
-            <!-- Second Row -->
-            <tr>
-                <td>C#</td>
-                <td>1</td>
-                <td>School</td>
-            </tr>
-            <!-- Third Row -->
-            <tr>
-                <td>C++</td>
-                <td>1</td>
-                <td>School</td>
-            </tr>
-            <!-- Fourth Row -->
-            <tr>
-                <td>Python</td>
-                <td>1</td>
-                <td>Self Learning</td>
-            </tr>
-            <!-- Fifth Row -->
-            <tr>
-                <td>Android App Development</td>
-                <td>1</td>
-                <td>Self Learning / Freelance</td>
-            </tr>
-        </table>
 
-        <!-- some space -->
-        <br><br><br>
+    <h1>Experience</h1>
+
+    <!-- Give a little spacing -->
+    <br>
+    <br>
+
+
+    <!-- Creating the table that has 3 columns of data with headers -->
+    <table class="center">
+        <!-- Table Header -->
+        <tr>
+            <th>Skills</th>
+            <th>Years</th>
+            <th>Where</th>
+        </tr>
+        <!-- first row -->
+        <tr>
+            <td>Java</td>
+            <td>3</td>
+            <td>School</td>
+        </tr>
+        <!-- Second Row -->
+        <tr>
+            <td>C#</td>
+            <td>1</td>
+            <td>School</td>
+        </tr>
+        <!-- Third Row -->
+        <tr>
+            <td>C++</td>
+            <td>1</td>
+            <td>School</td>
+        </tr>
+        <!-- Fourth Row -->
+        <tr>
+            <td>Python</td>
+            <td>1</td>
+            <td>Self Learning</td>
+        </tr>
+        <!-- Fifth Row -->
+        <tr>
+            <td>Android App Development</td>
+            <td>1</td>
+            <td>Self Learning / Freelance</td>
+        </tr>
+    </table>
+
+
+
+    <!-- some space -->
+    <br><br><br>
+    <div class="center">
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="skills.html">Skills</a>
         <a href="Passions.html">Passions</a>
     </div>
+
+
 </body>
 
 </html>

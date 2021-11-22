@@ -6,63 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet" type="text/css" href="mystyles.css">
+
+    <style>
+        h2 {
+            text-align: left;
+            color: greenyellow;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        a {
+            color: darkmagenta;
+
+
+        }
+
+        #bannertext {
+            text-shadow: 1px 1px lawngreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+
+        }
+    </style>
 </head>
 
-<body bgcolor="black">
+<body>
 
-    <!--This snippet of html code will create the heading centered and styled-->
-    <font face="arial" color="green " size="5">
-        <h1 align="center">Skills</h1>
-    </font>
+    <!-- Animated Banner with fade in text -->
+    <div id="homeBanner">
+        <div id="bannertext">
+            <h2 class="fade-in">Never Stop Learning</h2>
+        </div>
+    </div>
 
-    <!-- This snippet of html code will create the label and horizontal rule for the first list-->
-    <font face="Arial" color="green" size="4">
-        <h2 align="left">Languages</h2>
-        <hr style="height: 4px;border-width: 0px ;background-color: red;">
+    <h1>Skills</h1>
 
-    </font>
+
+    <h2>Languages</h2>
+    <hr>
+
 
     <!--list of languages-->
-    <font face="Comic Sans" color="yellow" size="4">
-        <ul>
-            <li>JAVA</li>
-            <li>C#</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>KOTLIN</li>
-        </ul>
+    <ul>
+        <li>JAVA</li>
+        <li>C#</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>KOTLIN</li>
+    </ul>
 
-    </font>
 
-    <br /><br>
     <!--Spacer-->
+    <br /><br>
+
 
     <!-- This snippet of html code will create the label and horizontal rule for the second list-->
-    <font face="Arial" color="green" size="4">
-        <h2 align="left">IDE's</h2>
-        <hr style="height: 4px;border-width: 0px ;background-color: red;">
+    <h2>IDE's</h2>
+    <hr>
 
-    </font>
+
 
     <!--list of IDE's-->
-    <font face="Comic Sans" color="yellow" size="4">
-        <ul>
-            <li>Intellij</li>
-            <li>Visual Studio</li>
-            <li>Android Studio</li>
-            <li>Microsoft VS Code</li>
-        </ul>
+    <ul>
+        <li>Intellij</li>
+        <li>Visual Studio</li>
+        <li>Android Studio</li>
+        <li>Microsoft VS Code</li>
+    </ul>
 
-        <!--links at the bottom to other pages, center with breaks to give space-->
-        <br /><br />
-        <p align="center">
+    <!--links at the bottom to other pages, center with breaks to give space-->
+    <br /><br />
 
-            <a href="index.html">Home</a><br />
-            <a href="projects.html">My Projects</a><br />
-            <a href="experience.html">Experience</a><br />
-            <a href="Passions.html">Passions</a>
 
-        </p>
+    <div class="center">
+        <a href="index.html">Home</a>
+        <a href="projects.html">My Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="Passions.html">Passions</a>
+
+    </div>
+
+
+
 </body>
 
 </html>
