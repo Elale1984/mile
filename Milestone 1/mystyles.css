@@ -58,16 +58,6 @@ section {
     align-items: center;
 }
 
-a {
-    font-size: 20px;
-    background-color: transparent;
-    transition: background-color 1s;
-
-}
-
-a:hover {
-    background-color: gold;
-}
 
 /*===========================================================================================================================================
  Table CSS  
@@ -112,6 +102,7 @@ tr:nth-child(even) {
     text-align: center;
 
 }
+
 
 #bannertext {
     text-shadow: 1px 1px lawngreen;
@@ -158,6 +149,35 @@ table.center {
     margin-right: auto;
 }
 
+/* *****************************
+ * Flex box                    * 
+ *******************************/
+
+#container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+
+#one,
+#two,
+#three,
+#four {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-style: solid;
+    border-color: blue;
+    text-align: center;
+
+}
+
+/* *****************************
+ * Animation of text in border * 
+ *******************************/
 .fade-in {
     animation: fadeIn ease 4s;
     -webkit-animation: fadeIn ease 4s;
@@ -225,4 +245,85 @@ table.center {
     100% {
         opacity: 1;
     }
+}
+
+/* anchor style with animation */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+
+
+.nav {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    paddin: 0;
+}
+
+.nav a {
+    padding: .5em .8em;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+.nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+}
+
+.nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+.nav a:hover {
+    color: #3DA35D;
+}
+
+/* fixed footer at bottom of page */
+.myFooter{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
