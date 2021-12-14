@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="mystyles.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="mystyles.css" />
+
+
+
+  <!-- Bootstrap and jQuery Libraries -->
+
+  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+  <!-- JavaScript code link -->
+  <script src="/Milestone 1/js/myJSCode.js"></script>
+
+
+  <!-- jQuery show and hide  -->
+  <script>
+    $(document).ready(
+      function () {
+        $("#hidden-pic-text").click(function () {
+          $("#hidden-picture").toggle("fast");
+        });
+      });
+  </script>
 
   <style>
     #profilePic {
@@ -15,75 +41,105 @@
       width: 275px;
     }
   </style>
+</head>
 
-  <script src="/Milestone 1/js/myJSCode.js"></script>
+<body onload="onLoadFirstPage()">
 
-  <body onload="onLoadFirstPage()">
-    <div id="homeBanner">
-      <div id="bannertext">
-        <h2 class="fade-in">Peruse What You Love</h2>
-      </div>
-    </div>
 
-    <div class="container">
-      <br /><br />
-      <img
-        src="images/profile-pic.jpg"
-        alt="my profile picture"
-        id="profilePic"
-      />
-      <h1>Edward Lale</h1>
-      <h2>Software Developer</h2>
+  <!-- utilizing bootstraps for the navbar -->
 
-      <div class="row">
-        <div class="col">
-          <p class="scrollP">
-            Hello World! My name is Edward and I welcome you to my personal
-            space. Here you can find some of the projects that I have completed.
-            It is important to keep track of the work that we do and show the
-            world what we are capable of. I came from an interesting and
-            adventurous background. Life is full of surprises, but it is no
-            surprise that I have ended up here. While I was in high school, I
-            fell in love with computers and writing code.
-          </p>
-        </div>
-        <div class="col">
-          <p class="scrollP">
-            It became a passion that I unfortunately did not pursue after
-            graduation. But, like life does, a full circle has completed, and I
-            am pursuing a bachelor’s degree in Software Development. Technology
-            has advanced at such a rapid rate that the things we can do now were
-            not even dreamt of 5 years ago. I cant wait to see what the future
-            holds in technological advances and I am excited to be a part of
-            that exponential growth!
-          </p>
-        </div>
-      </div>
-    </div>
-    <br /><br /><br />
-    <div class="typeTextStyle">
-      <p id="typeText"></p>
-    </div>
 
-    <h2 id="clickPicText" onclick="onClickText()">Click to see my family</h2>
-    
-    <img
-      src="/Milestone 1/images/mygirls.jpg"
-      alt="my girls"
-      id="mySlideImage"
-    />
-
-    <br /><br /><br /><br /><br />
-    <hr />
-    <!-- New Nav Bar for anchors with animation on fixed footer-->
-    <div class="myFooter">
-      <ul class="nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="Passions.html">Passions</a></li>
+  <!-- Nav Bar - on top and dark theme-->
+  <nav class="navbar navbar-expand-sm bg-dark border-bottom border-danger">
+    <!-- my unresponsive responsive links -->
+    <div class="container-fluid">
+      <!-- unsorted list holds the links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./experience.html">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Passions.html">Passions</a>
+        </li>
+      </ul>
+      <!-- Add my fade border message to the right side of the nav bar -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <div id="bannertext">
+            <h2 class="fade-in">Peruse What You Love</h2>
+          </div>
+        </li>
       </ul>
     </div>
-  </body>
+  </nav>
+
+
+  <div class="container">
+    <br /><br />
+    <img src="images/profile-pic.jpg" alt="my profile picture" id="profilePic" />
+    <h1>Edward Lale</h1>
+    <h2>Software Developer</h2>
+
+    <div class="row">
+      <div class="col">
+        <p class="scrollP">
+          Hello World! My name is Edward and I welcome you to my personal
+          space. Here you can find some of the projects that I have completed.
+          It is important to keep track of the work that we do and show the
+          world what we are capable of. I came from an interesting and
+          adventurous background. Life is full of surprises, but it is no
+          surprise that I have ended up here. While I was in high school, I
+          fell in love with computers and writing code.
+        </p>
+      </div>
+      <div class="col">
+        <p class="scrollP">
+          It became a passion that I unfortunately did not pursue after
+          graduation. But, like life does, a full circle has completed, and I
+          am pursuing a bachelor’s degree in Software Development. Technology
+          has advanced at such a rapid rate that the things we can do now were
+          not even dreamt of 5 years ago. I cant wait to see what the future
+          holds in technological advances and I am excited to be a part of
+          that exponential growth!
+        </p>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br />
+  <div class="typeTextStyle">
+    <p id="typeText"></p>
+  </div>
+
+  <h2 id="clickPicText" onclick="onClickText()">Click to see my family</h2>
+
+  <img src="/Milestone 1/images/mygirls.jpg" alt="my girls" id="mySlideImage" />
+
+  <br><br>
+
+
+  <div id="hidden-pic-text">
+    <h2>Click me</h2>
+  </div>
+
+  <br>
+  <div id="hidden-picture">
+    <img src="./images/myhiddenpic.jpg" alt="java brain">
+  </div>
+
+
+  <!-- some space -->
+
+  <br><br><br><br><br><br>
+
+</body>
+
 </html>

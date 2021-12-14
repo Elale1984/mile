@@ -3,7 +3,7 @@
 =============================================================================================================================================== */
 
 body {
-    background-color: gainsboro;
+    background-color: gainsboro !important;
 }
 
 h1 {
@@ -100,6 +100,7 @@ tr:nth-child(even) {
     object-fit: cover;
     height: 75px;
     text-align: center;
+   justify-items: center;
 
 }
 
@@ -393,4 +394,15 @@ table.center {
     
 }
 
+
+/* Classes for Bootstrap Nav */
+.nav-link:visited,
+.nav-link:link {
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid #1bcfc6;
+}
 
