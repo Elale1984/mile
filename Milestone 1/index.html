@@ -1,72 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="mystyles.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="mystyles.css" />
+  </head>
 
-<style>
+  <style>
     #profilePic {
-        text-align: center;
-        height: 400px;
-        width: 275px;
+      text-align: center;
+      height: 400px;
+      width: 275px;
     }
-</style>
+  </style>
 
-<body>
+  <script src="/Milestone 1/js/myJSCode.js"></script>
 
-    
-    <!-- Animated Banner with fade in text -->
+  <body onload="onLoadFirstPage()">
     <div id="homeBanner">
-        <div id="bannertext">
-            <h2 class="fade-in">Coding Is A Lifestyle</h2>
+      <div id="bannertext">
+        <h2 class="fade-in">Peruse What You Love</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <br /><br />
+      <img
+        src="images/profile-pic.jpg"
+        alt="my profile picture"
+        id="profilePic"
+      />
+      <h1>Edward Lale</h1>
+      <h2>Software Developer</h2>
+
+      <div class="row">
+        <div class="col">
+          <p class="scrollP">
+            Hello World! My name is Edward and I welcome you to my personal
+            space. Here you can find some of the projects that I have completed.
+            It is important to keep track of the work that we do and show the
+            world what we are capable of. I came from an interesting and
+            adventurous background. Life is full of surprises, but it is no
+            surprise that I have ended up here. While I was in high school, I
+            fell in love with computers and writing code.
+          </p>
         </div>
+        <div class="col">
+          <p class="scrollP">
+            It became a passion that I unfortunately did not pursue after
+            graduation. But, like life does, a full circle has completed, and I
+            am pursuing a bachelor’s degree in Software Development. Technology
+            has advanced at such a rapid rate that the things we can do now were
+            not even dreamt of 5 years ago. I cant wait to see what the future
+            holds in technological advances and I am excited to be a part of
+            that exponential growth!
+          </p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="typeTextStyle">
+      <p id="typeText"></p>
     </div>
 
-    <br><br>
-    <!--Profile picture centered and resized-->
-    <img src="images/profile-pic.jpg" alt="my profile picture" id="profilePic">
+    <h2 id="clickPicText" onclick="onClickText()">Click to see my family</h2>
+    
+    <img
+      src="/Milestone 1/images/mygirls.jpg"
+      alt="my girls"
+      id="mySlideImage"
+    />
 
-    <div>
-        <h1>Edward Lale</h1>
-        <h2>Software Developer</h2>
-    </div>
-
-    <p>
-        Hello World! My name is Edward and I welcome you to my personal space. Here you can
-        find some of the projects that I have completed. It is important to keep track of
-        the work that we do and show the world what we are capable of. I came from an interesting
-        and adventurous background. Life is full of surprises, but it is no surprise that I have
-        ended up here. While I was in high school, I fell in love with computers and writing code.
-        It became a passion that I unfortunately did not pursue after graduation. But, like life does,
-        a full circle has completed, and I am pursuing a bachelor’s degree in Software Development.
-        Technology has advanced at such a rapid rate that the things we can do now were not even
-        dreamt of 5 years ago. I cant wait to see what the future holds in technological advances
-        and I am excited to be a part of that exponential growth!
-    </p>
-
-    <!-- some space -->
-    <br><br><br><br><br><br>
-
-
-   
-
-   <!-- New Nav Bar for anchors with animation on fixed footer-->
-   <div class="myFooter">
-    <ul class="nav">
+    <br /><br /><br /><br /><br />
+    <hr />
+    <!-- New Nav Bar for anchors with animation on fixed footer-->
+    <div class="myFooter">
+      <ul class="nav">
         <li><a href="index.html">Home</a></li>
-        <li> <a href="skills.html">Skills</a></li>
+        <li><a href="skills.html">Skills</a></li>
         <li><a href="experience.html">Experience</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li> <a href="Passions.html">Passions</a></li>
-        
+        <li><a href="Passions.html">Passions</a></li>
       </ul>
-</div>
-
-</body>
-
+    </div>
+  </body>
 </html>
